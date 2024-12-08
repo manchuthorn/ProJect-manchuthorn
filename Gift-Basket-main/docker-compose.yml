@@ -1,0 +1,17 @@
+version: '25.0.2'
+
+services:
+  client:
+    build: Client
+    ports:
+      - '8080:8080'
+  server:
+    build: Server
+    env_file:
+      - .env
+    environment:
+      - PORT=3001
+      - CLIENT_URL=http://localhost:8080
+      - MONGO_URI=mongodb+srv://admin00:123@giftbasket.jrkveu5.mongodb.net/GiftBasketDB
+    ports:
+      - '3001:3001'
