@@ -1,0 +1,99 @@
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.all-edit-container {
+    animation: transitionIn 0.75s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px !important;
+    width: 100%;
+    height: 570px !important;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #81531b;
+    width: 100%;
+    margin-top: -16px;
+}
+
+.edit-container .mb-3 {
+    width: 100%;
+}
+
+.edit-container .lb-1 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.edit-container .row {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 120px;
+    padding-left: 20px;
+}
+
+.edit-container .row .col-md-6 {
+    width: 50%;
+}
+
+.edit-container input::placeholder {
+    color: #81531b7b;
+}
+
+.edit-container input:focus {
+    outline: 1px solid #ffac6c;
+    box-shadow: none;
+}
+
+
+.edit-button {
+    width: 15%;
+    color: #ffffff;
+    background-color: #ffac6c !important;
+    border-color: transparent !important;
+    display: block;
+    margin-left: auto;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.edit-button:hover {
+    background-color: #ffdec4 !important;
+    color: #81531b;
+}
+
+.suggestion-container {
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    max-height: 150px;
+    overflow: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.suggestion-option {
+    padding: 4px 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor:pointer;
+}

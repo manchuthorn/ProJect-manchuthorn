@@ -1,0 +1,36 @@
+.select-add-content {
+    margin-bottom: 60px;
+}
+
+.confirm-button {
+    width: 15%;
+    color: #ffffff;
+    background-color: #ffac6c !important;
+    border-color: transparent !important;
+    position: fixed;
+    right: 1.5%;
+    bottom: 2%;
+    font-weight: 500;
+}
+
+.confirm-button:hover {
+    background-color: #ffdec4 !important;
+    color: #81531b;
+}
+
+.noadd {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.addadd-link {
+    color: #ffac6c;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.addadd-link:hover {
+    color: #ffdec4;
+}
